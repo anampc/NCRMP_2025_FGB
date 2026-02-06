@@ -1,11 +1,11 @@
 ---
 output:
-  word_document: default
-  always_allow_html: true
   html_document:
     fig_height: 5
     fig_width: 5
     fig_position: center
+  always_allow_html: true
+  word_document: default
 editor_options: 
   chunk_output_type: console
 ---
@@ -57,7 +57,7 @@ knitr::include_graphics("Pictures/Top_1.jpg")
 <h4 style="font size=8">
 Atlantic Oceanographic &amp; Meteorological Laboratory Coral Program<br>
 University of Miami Cooperative Institute of Marine and Atmospheric Science<br>
-National Oceanic Atmospheric Administration</h4>
+National Oceanic and Atmospheric Administration</h4>
 
 <br>
 
@@ -72,7 +72,6 @@ p2 <- ggdraw() + draw_image("Logos/UM.png", scale = 0.9)
 plot_grid(p1, p2)
 ```
 
- 
 --------
 
 ### Mission
@@ -85,7 +84,7 @@ The AOML Coral Program tracks the status and trends of coral reef ecosystems of 
 
 * The AOML Coral Program conducted NCRMP climate monitoring operations at FGBNMS from August 25th to August 29th, 2025
 
-* A total of eight different sites were visited by ten team members and local sanctuary collaborators completing a total of 39 dives. 
+* A total of eight different sites were visited by ten team members and local sanctuary collaborators, completing a total of 39 dives. 
 
 --------
 
@@ -287,7 +286,7 @@ Changes in Bioerosion and accretion were monitored
 
 Every 5-10 years, the Coral Program field team collects coral cores as a part of NCRMP to track coral growth over time (Fig. 2). In this cruise, we collected 16 cores across three species: 11 <i>Orbicella faveolata</i>, 3 <i>Colpophyllia natans</i>, and 2 <i>Pseudodiploria strigosa</i>.
 
-```{r disease, echo=FALSE, out.width = '50%', fig.cap="Figure 2: NCRMP diver collection a coral core at the FGB.", fig.align='center'}
+```{r disease, echo=FALSE, out.width = '50%', fig.cap="Figure 2: NCRMP diver collects a coral core at the FGB.", fig.align='center'}
 
 knitr::include_graphics("Pictures/Coring.jpg")
 
@@ -297,7 +296,7 @@ knitr::include_graphics("Pictures/Coring.jpg")
 
 #### Subsurface Temperature
 
-The temperatures that marine organisms experience are a function of depth and local oceanographic conditions. To monitor this, two cross-shelf transects were established at each bank within the sanctuary. Three years of temperature measurements were retrieved and processed from eigth sites (depths). Each transect consists of STRs at 4 depths (20, 25, 30, 35m; Fig. 3). Temperature was measured using SeaBird Electronics Subsurface Temperature Recorders (STRs) that collected data at 5-minute intervals. Gaps exist in the data as some STRs battery life died before the end of the full deployment.
+The temperatures that marine organisms experience are a function of depth and local oceanographic conditions. To monitor this, two cross-shelf transects were established at each bank within the sanctuary. Three years of temperature measurements were retrieved and processed from eight sites (depths). Each transect consists of STRs at 4 depths (20, 25, 30, 35m; Fig. 3). Temperature was measured using SeaBird Electronics Subsurface Temperature Recorders (STRs) that collected data at 5-minute intervals. Gaps exist in the data as some STRs battery life died before the end of the full deployment.
 
 
 ```{r filter Temp, include=FALSE}
@@ -426,7 +425,7 @@ STR_all_summary <- STR_all %>%
 
 ```
 
-In general, the lowest temperatures were recorded during the winter of 2024 at both the east and west banks. In February 2024, minimum temperatures ranged from 19.2 to 19.4 $^\circ$C, while maximum temperatures fluctuated between 21.4 and 21.7 $^\circ$C. September 2023 was the warmest month at both banks, with mean temperatures exceeding 30.2 $^\circ$C at the East 20m, 25m, and 30m stations and at the West 30 m station. Mean temperatures at the 35m stations on both banks were slightly lower, averaging 29.8 and 30.0 $^\circ$C, respectively (Fig. 2).
+In general, the lowest temperatures were recorded during the winter of 2024 at both the east and west banks. In February 2024, minimum temperatures ranged from 19.2 to 19.4 $^\circ$C, while maximum temperatures fluctuated between 21.4 and 21.7 $^\circ$C. September 2023 was the warmest month at both banks, with mean temperatures exceeding 30.2 $^\circ$C at the East 20m, 25m, and 30m stations and at the West 30 m station. Mean temperatures at the 35m stations on both banks were slightly lower, averaging 29.8 and 30.0 $^\circ$C, respectively (Fig. 3).
 
 -----
 
@@ -434,7 +433,7 @@ In general, the lowest temperatures were recorded during the winter of 2024 at b
 
 Seawater carbonate chemistry can fluctuate diurnally, due to biological forcing and processes such as photosynthesis and respiration, as well as calcification and dissolution. To characterize this, discrete water samples were collected at three-hour intervals (n=20) using Subsurface Automatic Samplers (SAS, https://www.coral.noaa.gov/accrete/sas/). These samples will be analyzed for Total Alkalinity (TA), Dissolved Inorganic Carbon (DIC), and Spectrophotometric pH (SpecpH), which will be used to calculate pCO2 and aragonite saturation state (Ω<sub>Aragonite</sub>).
 
-A suite of instruments was deployed for a 72-hour period at the East Bank 20m site. A SAMI was used to log pH, an EcoPAR measured Photosynthetically Active Radiation (PAR), and a Lowell Tiltmeter measured current speed and direction. Each collected measurements at 15-minute intervals (Fig. 4).
+A suite of instruments was deployed for a 72-hour period at the East Bank 20m site. A SAMI was used to log pH, an EcoPAR measured Photosynthetically Active Radiation (PAR), and a Lowell Tiltmeter measured current speed and direction. Each instrument collected measurements at 15-minute intervals (Fig. 4).
 
 ```{r ph and temp combined v3,echo=FALSE, warning=FALSE,fig.width = 9.5, fig.height = 3.5}
 
@@ -611,7 +610,7 @@ knitr::include_graphics("Pictures/Rich.JPG")
 
 Carbonate budgets have remained positive during the monitoring period (2015-2025), indicating continued habitat growth. However, they declined in 2022 and 2025. In 2022, intense bioerosion by parrotfish, driven by the presence of very large individuals across the transects, led to a fourfold increase in parrotfish bioerosion rates between 2019 and 2022. Combined with reduced coral cover, this resulted in a decline in net community calcification exceeding 4 kg m⁻² yr⁻¹ in 2022. In 2025, parrotfish bioerosion was less pronounced; however, coral production remained low. Consequently, carbonate budgets were higher than in 2022 but still lower than those recorded in 2015 and 2019 (Fig. 6).
 
-```{r, Carbonate_B_plot, echo=FALSE, warning=FALSE, fig.width = 7.5, fig.height = 3.5}
+```{r, Carbonate_B_plot, echo=FALSE, warning=FALSE, fig.width = 8, fig.height = 3.5}
 ## boxplots production
 data <- read.csv("Data/FGB_CB.csv")
 mdata<-melt(data,id.vars=c(8:13))
@@ -674,7 +673,7 @@ Finally, **Calcification Accretion Units (CAUs)** and **Bioerosion Monitoring Un
 
 ### About the monitoring program
 
-AOML's climate monitoring is a key part of the National Coral Reef Monitoring Program of NOAA's Coral Reef Conservation Program (CRCP), providing integrated, consistent, and comparable data across U.S. Managed coral reef ecosystems.
+AOML's climate monitoring is a key part of the National Coral Reef Monitoring Program of NOAA's Coral Reef Conservation Program (CRCP), providing integrated, consistent, and comparable data across U.S. managed coral reef ecosystems.
 NCRMP efforts aim to:
 
 * Document the status of reef species of ecological and economic importance
@@ -684,7 +683,7 @@ NCRMP efforts aim to:
 
 ### Point of Contact
 
-Atlantic Climate Operations Coordniator: nicole.besemer@noaa.gov
+Atlantic Climate Operations Coordinator: nicole.besemer@noaa.gov
 
 Principal Investigator: ian.enochs@noaa.gov
 
@@ -707,7 +706,7 @@ http://www.aoml.noaa.gov/
 
 ### Acknowledgements
 
-These efforts were jointly funded by NOAA's CRCP project #743 and OAP. We would like to sincerely thank Flower Garden Banks and the National Marine Santuary Foundation for supporting our field efforts and assisting monitoring surveys and permitting.
+These efforts were jointly funded by NOAA's CRCP project #743 and OAP. We would like to sincerely thank Flower Garden Banks and the National Marine Sanctuary Foundation for supporting our field efforts and assisting monitoring surveys and permitting.
 
 ```{r fundingsources, include=FALSE, fig.width = 10, fig.height = 4, fig.align='center', out.width='100%'}
 
